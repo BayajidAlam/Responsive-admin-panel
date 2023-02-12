@@ -135,7 +135,7 @@ nav .manu-items{
   color: var(--primary-color);
 }
 
-/* dark mode  */
+/* toggle mode */
 .manu-items .mode{
   display: flex;
   align-items: center;
@@ -171,4 +171,9 @@ nav .manu-items{
   width: 15px;
   border-radius: 50%;
   background-color: var(--panel-color);
+  transition: var(--tran-03);
+}
+
+body.dark .switch::before{
+  left: 20px;
 }
