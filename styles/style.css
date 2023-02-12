@@ -84,7 +84,6 @@ nav .logo-name .logo-name{
 /* manu  */
 
 nav .manu-items{
-  background: red;
   margin-top: 40px;
   height: calc(100% - 90px);
   display: flex;
@@ -92,6 +91,84 @@ nav .manu-items{
   justify-content: space-between;
 }
 
-.manu-items .nav-links{
-  
+.manu-items li{
+  list-style: none;
+}
+
+.manu-items li a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 50px;
+  display: flex;
+  position: relative;
+}
+
+.nav-links li a:hover::before{
+  content: '';
+  position: absolute;
+  left: -7px;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.manu-items li a i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  min-width: 45px;
+  height: 100%;
+  color: var(--black-light-color);
+}
+
+.manu-items li a .link-name{
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black-light-color);
+}
+
+.nav-links li a:hover i,
+.nav-links li a:hover .link-name{
+  color: var(--primary-color);
+}
+
+/* dark mode  */
+.manu-items .mode{
+  display: flex;
+  align-items: center;
+}
+
+.manu-items .mode-toggle{
+  position: absolute;
+  right: 14px;
+  height: 50px;
+  min-width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mode-toggle .switch{
+  position: relative;
+  display: inline-block;
+  border-radius: 25px;
+  height: 22px;
+  width: 40px;
+  background-color: var(--toggle-color);
+}
+
+.switch::before{
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--panel-color);
 }
