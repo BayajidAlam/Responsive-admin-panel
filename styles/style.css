@@ -131,6 +131,10 @@ nav .manu-items{
   background-color: var(--primary-color);
 }
 
+body.dark li a:hover::before{
+  background-color: var(--text-color);
+}
+
 .manu-items li a i{
   display: flex;
   justify-content: center;
@@ -155,6 +159,11 @@ nav.close li a .link-name{
 
 .nav-links li a:hover i,
 .nav-links li a:hover .link-name{
+  color: var(--primary-color);
+}
+
+body.dark li a:hover i,
+body.dark  li a:hover .link-name{
   color: var(--primary-color);
 }
 
@@ -273,4 +282,9 @@ nav.close ~ .dashboard .top{
   top: 50%;
   transform: translateY(-50%);
   left: 15px;
+}
+
+.top img{
+  width: 40px;
+  border-radius: 50%;
 }
