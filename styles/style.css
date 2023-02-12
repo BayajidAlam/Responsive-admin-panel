@@ -45,3 +45,53 @@ body.dark{
   --box3-color: #3A3B3C;
   --title-icon-color: #CCC;
 }
+
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding: 10px 14px;
+  background-color: var(--panel-color);
+}
+
+nav .logo-name{
+  display: flex;
+  align-items: center;
+}
+
+nav .logo-image{
+  display: flex;
+  justify-content: center;
+  min-width: 45px;
+}
+
+nav .logo-image img{
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+nav .logo-name .logo-name{
+  margin-left: 14px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* manu  */
+
+nav .manu-items{
+  background: red;
+  margin-top: 40px;
+  height: calc(100% - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.manu-items .nav-links{
+  
+}
