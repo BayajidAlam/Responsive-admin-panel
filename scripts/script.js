@@ -9,3 +9,8 @@ const modeToggle = document.getElementById('mode-toggle').addEventListener('clic
   const body = document.querySelector("body")
   body.classList.toggle("dark")
 })
+
+const sidebarToggle = document.getElementById('sidebar-toggle').addEventListener('click',function(){
+  const sidebar = document.querySelector('nav');
+  sidebar.classList.toggle('close')
+})
